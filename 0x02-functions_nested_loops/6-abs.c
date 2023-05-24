@@ -2,18 +2,18 @@
 /**
  * _abs - function that computes the absolute value of an integer
  *
- * @i: input no
+ * @d: input no
  *
  * Return: absolute
  */
-int _abs(int i)
+int _abs(int d)
 {
-	if (i >= 0)
+	if (d >= 0)
 	{
-		return (i);
+		return (d);
 	}
 	else
 	{
-		return (i * -1);
+		return (d * -1);
 	}
 }
