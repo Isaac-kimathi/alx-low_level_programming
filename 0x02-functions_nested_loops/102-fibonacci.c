@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	unsigned long gb1 = 0, gb2 = 1, sum;
+	long int gb1, gb2, sum;
 
 	gb1 = 1;
 	gb2 = 2;
