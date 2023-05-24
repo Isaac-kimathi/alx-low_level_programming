@@ -11,18 +11,16 @@ int main(void)
 	int i;
 	unsigned long gb1 = 0, gb2 = 1, sum;
 
+	gb1 = 1;
+	gb2 = 2;
+	printf("%lu, %lu", gb1, gb2);
 	for (i = 0; i < 50; i++)
 	{
 		sum = gb1 + gb2;
 		putchar(sum);
-
 		gb1 = gb2;
 		gb2 = sum;
-
-		if (i == 49)
-			printf("\n");
-		else
-			printf(", ");
 	}
+	putchar("\n")
 	return (0);
 }
