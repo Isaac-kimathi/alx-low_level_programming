@@ -21,6 +21,6 @@ int main(void)
 		gb1 = gb2;
 		gb2 = sum;
 	}
-	putchar("\n");
+	printf("\n");
 	return (0);
 }
