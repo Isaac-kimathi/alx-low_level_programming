@@ -17,7 +17,7 @@ int main(void)
 		ls = l1 + l2;
 		l1 = l2;
 		l2 = ls;
-		if ((n1 % 2) == 0)
+		if ((l1 % 2) == 0)
 		{
 			als += l1;
 		}
