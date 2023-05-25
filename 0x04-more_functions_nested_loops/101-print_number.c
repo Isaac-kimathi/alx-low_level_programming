@@ -7,16 +7,26 @@
  */
 void print_number(int n)
 {
-	unsigned int i = n;
+	int k, l;
 
+	if (n != 0)
+	{
 	if (n < 0)
 	{
-		i = -i;
 		_putchar(45);
+		n = -n;
 	}
-	if ((i / 10) > 0)
+	k = n / 10;
+	l = n % 10;
+	if (k != 0)
 	{
-		print_number(i / 10);
-		_putchar('0' + (i % 10));
+		print_number(k);
+		_putchar(l + 48);
 	}
+	else
+		_putchar(l + 48);
+
+	}
+	else
+	_putchar(48);
 }
