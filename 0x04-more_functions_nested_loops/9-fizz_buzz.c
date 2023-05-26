@@ -3,7 +3,7 @@
  * main - prints nos from 1 to 100, followed by a new line
  * Description - multiples of 3 and 5, prints Fizz and Buzz respectively
  *     for multiples of both prints FizzBuzz
- * return: always 0
+ * Return: always 0
  */
 int main(void)
 {
