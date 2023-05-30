@@ -6,6 +6,7 @@
  *          If the number of characters is odd,
  *          the function prints the last n characters of the string,
  *          where n = (length_of_the_string - 1) / 2
+ * @str: string parameter
  * Return: void
  */
 void puts_half(char *str)
