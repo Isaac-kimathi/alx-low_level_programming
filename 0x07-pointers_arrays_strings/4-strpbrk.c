@@ -4,7 +4,7 @@
  * description - locates the first occurrence in the string s of any
  * of the bytes in the string accept
  * @s: string occurrence to be search
- * @check: string to check string s
+ * @accept: string to check string s
  * Return: Null if no byte found or a pointer to the byte in that matches
  * one of the bytes in accept
  */
