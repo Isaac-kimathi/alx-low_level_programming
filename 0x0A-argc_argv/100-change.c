@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		int n, coins = 0, money = atoi(argv[1]);
-		int x[] = {25, 10, 5, 2};
+		int x[] = {25, 10, 5, 2, 1};
 
 		for (n = 0; n < 5; n++)
 		{
