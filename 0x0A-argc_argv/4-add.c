@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - program that adds positive numbers
  * @argc: argument count
@@ -16,7 +15,10 @@ int main(int argc, char *argv[])
 	{
 		for (y = argv[argc]; *y; y++)
 			if (*y < '0' || *y > '9')
-				return (printf("Error\n"), 1);
+			{
+				printf("Error\n");
+				return (1);
+			}
 	       res += atoi(argv[argc]);
 	}
 	printf("%d\n", res);
