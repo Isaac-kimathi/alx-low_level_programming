@@ -6,7 +6,7 @@
 #include<stdlib.h>
 
 /**
- * struct token - struct for token
+ *struct token - struct for token
  *
  * @token: format token
  * @q: the function associated
