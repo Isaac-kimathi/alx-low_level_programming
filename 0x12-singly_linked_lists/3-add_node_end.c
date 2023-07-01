@@ -25,13 +25,13 @@ list_t *add_node_end(list_t **head, const char *str)
 			free(nw_nd);
 			return (NULL);
 		}
-		nw_nd->len = _slngth(nw_nd->str);
+		nw_nd->len = strlen(nw_nd->str);
 	}
 	if (node)
 	{
 		while (node->next)
 			node = node->next;
-		node->next = nw_node;
+		node->next = nw_nd;
 	}
 	else
 		*head = nw_nd;
