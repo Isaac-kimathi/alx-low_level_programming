@@ -1,4 +1,21 @@
 #include "lists.h"
+
+/**
+ * _slngth - returns the length of a string
+ * @s: the string length to be checked
+ * Return: int lngth of string
+ */
+int _slngth(char *s)
+{
+	int x = 0;
+
+	if (!s)
+		return (0);
+	while (*s++)
+		x++;
+	return (x);
+}
+
 /**
  * print_list - prints linked lists
  * @h: list head
@@ -6,19 +23,14 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t lng = 0;
+	size_t w = 0;
 
-	if (h)
+	while (h)
 	{
-		while (h)
-		{
-			if (h->str == NULL)
-				printf("[0] %p\n", h->str);
-			else
-				printf("[%d] %s\n", h->len, h->str);
-				lng++;
-				h = h->next;
-		}
+		printf("[%d] %s\n", _slngth(h->str), h->str ? h->str : "(nil)");
+		h = h->next;
+		w++;
 	}
-	return (lng);
+
+	return (w);
 }
