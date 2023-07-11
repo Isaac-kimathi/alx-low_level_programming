@@ -7,7 +7,7 @@
  *  if the file already exists, truncate it
  *  if filename is NULL return -1
  *  if text_content is NULL create an empty file
- * filename: name of the file to create
+ * @filename: name of the file to create
  * @text_content: NULL terminated string to write to the file
  * Return: 1 on success, -1 on failure
  */
