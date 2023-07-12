@@ -3,7 +3,8 @@
 
 /**
  * main -  program that copies the content of a file to another file
- * @agrc: number of arguments
+ *
+ * @argc: number of arguments
  * @argv: a pointer pointing to the array of arguments
  * Return: Always 0 (success)
  */
@@ -34,7 +35,7 @@ int main(int argc, char **argv)
 		error_98(result0, buffer, argv[1]);
 		result1 = write(fl_f, buffer, result0);
 		error_99(result1, buffer, argv[2]);
-	}while (result1 >= BUF_SIZE);
+	} while (result1 >= BUF_SIZE);
 
 	result0 = close(fl_f);
 	error_100(result0, buffer);
@@ -49,7 +50,7 @@ int main(int argc, char **argv)
  * error_98 - checks error 98
  * @fl_f: the value to check
  * @buffer: the buffer
- * @argv: argument
+ * @argv: arguments
  */
 void error_98(int fl_f, char *buffer, char *argv)
 {
@@ -65,7 +66,7 @@ void error_98(int fl_f, char *buffer, char *argv)
  * error_99 - checks error 99
  * @fl_f: the value to check
  * @buffer: the buffer
- * @argv: argument
+ * @argv: arguments
  */
 void error_99(int fl_f, char *buffer, char *argv)
 {
