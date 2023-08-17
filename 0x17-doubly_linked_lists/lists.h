@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 /**
  * struct listint - doubly linked list
  * Description: doubly linked list node structure
