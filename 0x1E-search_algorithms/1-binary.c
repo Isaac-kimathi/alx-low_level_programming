@@ -13,16 +13,21 @@ int binary_search(int *array, size_t size, int value)
 	int i;
 
 	if (array == NULL)
-	{
 		return(-1);
-	}
 
 	while (lwr <= hghr)
 	{
-		mddl = (lwr + hghr) / 2;
 		printf("searching in array: ");
 		for (i = lwr; i <= hghr; i++)
-			printf("%i%s", array[i], i == hghr ? "\n" : ", ");
+		{
+			if (i == hghr)
+				printf("%d\n", array[i]);
+			else
+				printf("%d, ", array[i])
+		}
+
+		mddl = (lwr + hghr) / 2;
+
 		if (array[mddl] < value)
 			lwr = mddl + 1;
 		else if (array[mddl] > value)
@@ -30,5 +35,6 @@ int binary_search(int *array, size_t size, int value)
 		else
 			return(mddl);
 	}
+
 	return(-1);
 }
